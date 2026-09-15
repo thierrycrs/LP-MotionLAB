@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VideoFolio - Premium Video Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">Motion LAB</a>
+      <div class="nav-links desktop-only">
+      </div>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary desktop-only">Iniciar teste</a>
+        <button class="menu-toggle mobile-only" id="menuToggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="#contact" class="btn btn-primary mt-4">Começar agora</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1 class="hero-title reveal-text">
+          <span>DOMINE A IA</span><br />
+          <span class="text-accent">E CRIE VÍDEOS VIRAIS</span><br />
+          <span>AGORA MESMO!</span>
+        </h1>
+        <p class="hero-subtitle reveal-text-delay">
+          Aprenda o método usado por criadores que faturam com vídeos gerados por IA, do roteiro à criação.
+        </p>
+        <div class="hero-social-proof reveal-fade" style="margin-bottom: 24px; display: flex; align-items: center; gap: 8px;">
+          <span style="color: #ffd700; letter-spacing: 2px;">⭐⭐⭐⭐⭐</span> 
+          <span style="font-size: 0.9rem; font-weight: 500;">4.9/5 · +500 alunos formados</span>
+        </div>
+        <div class="hero-actions reveal-fade">
+          <a href="#contact" class="btn btn-primary">QUERO APRENDER</a>
+          <a href="#work" class="btn btn-secondary">Saiba mais <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Background Video / Image placeholder -->
+      <div class="hero-media">
+        <div class="video-overlay"></div>
+        <!-- We will inject a video from the user's folder here, or use a placeholder for now -->
+        <video autoplay loop muted playsinline class="hero-video">
+          <source src="./landingpagevideos/comercial-LP.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- Brands Marquee -->
+    <section class="brands-marquee">
+      <div style="text-align: center; color: var(--text-secondary); margin-bottom: 40px; font-weight: 500; font-family: var(--font-display); letter-spacing: 1px; text-transform: uppercase;">
+        Projetos e parcerias de nossos alunos
+      </div>
+      <div class="marquee-track">
+        <!-- Duplicated for infinite scroll effect -->
+        <div class="marquee-content">
+          <img src="./cliente-logo/2026-fifa-world-cup-logo-20.png" alt="FIFA" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/ifood-logo-0.png" alt="iFood" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/logotipo-cocacola.png" alt="Coca Cola" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/mercado-livre-logo-0-1.png" alt="Mercado Livre" class="brand-logo logo-ml" /> <span class="dot">•</span>
+          <img src="./cliente-logo/nomad logo.png" alt="Nomad" class="brand-logo" /> <span class="dot">•</span>
+          
+          <img src="./cliente-logo/2026-fifa-world-cup-logo-20.png" alt="FIFA" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/ifood-logo-0.png" alt="iFood" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/logotipo-cocacola.png" alt="Coca Cola" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/mercado-livre-logo-0-1.png" alt="Mercado Livre" class="brand-logo logo-ml" /> <span class="dot">•</span>
+          <img src="./cliente-logo/nomad logo.png" alt="Nomad" class="brand-logo" /> <span class="dot">•</span>
+          
+          <img src="./cliente-logo/2026-fifa-world-cup-logo-20.png" alt="FIFA" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/ifood-logo-0.png" alt="iFood" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/logotipo-cocacola.png" alt="Coca Cola" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/mercado-livre-logo-0-1.png" alt="Mercado Livre" class="brand-logo logo-ml" /> <span class="dot">•</span>
+          <img src="./cliente-logo/nomad logo.png" alt="Nomad" class="brand-logo" /> <span class="dot">•</span>
+        </div>
+        <div class="marquee-content">
+          <img src="./cliente-logo/2026-fifa-world-cup-logo-20.png" alt="FIFA" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/ifood-logo-0.png" alt="iFood" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/logotipo-cocacola.png" alt="Coca Cola" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/mercado-livre-logo-0-1.png" alt="Mercado Livre" class="brand-logo logo-ml" /> <span class="dot">•</span>
+          <img src="./cliente-logo/nomad logo.png" alt="Nomad" class="brand-logo" /> <span class="dot">•</span>
+          
+          <img src="./cliente-logo/2026-fifa-world-cup-logo-20.png" alt="FIFA" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/ifood-logo-0.png" alt="iFood" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/logotipo-cocacola.png" alt="Coca Cola" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/mercado-livre-logo-0-1.png" alt="Mercado Livre" class="brand-logo logo-ml" /> <span class="dot">•</span>
+          <img src="./cliente-logo/nomad logo.png" alt="Nomad" class="brand-logo" /> <span class="dot">•</span>
+          
+          <img src="./cliente-logo/2026-fifa-world-cup-logo-20.png" alt="FIFA" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/ifood-logo-0.png" alt="iFood" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/logotipo-cocacola.png" alt="Coca Cola" class="brand-logo" /> <span class="dot">•</span>
+          <img src="./cliente-logo/mercado-livre-logo-0-1.png" alt="Mercado Livre" class="brand-logo logo-ml" /> <span class="dot">•</span>
+          <img src="./cliente-logo/nomad logo.png" alt="Nomad" class="brand-logo" /> <span class="dot">•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Portfolio Section -->
+    <section class="work" id="work">
+      <div class="section-header">
+        <h2 class="section-title">ALGUNS PROJETOS</h2>
+        <p class="section-desc" style="margin-bottom: 24px;">Nenhum frame por acaso. Nenhum corte no achismo. Você não precisa saber editar, gravar
+          ou programar é só seguir o método e aprender a criar vídeos com IA que prendem do primeiro segundo ao último..
+        </p>
+        <div class="subtitle-card">
+          <p>FEITO POR ALUNOS</p>
+        </div>
+      </div>
+
+      <div class="video-carousels">
+        <!-- Top Carousel (Right to Left) -->
+        <div class="video-marquee">
+          <div class="video-marquee-content">
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-1.mp4"></video><div class="video-caption">@aluno_01 · +2.1M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-2.mp4"></video><div class="video-caption">@criador_ia · +1.5M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-3.mp4"></video><div class="video-caption">@motion_pro · +800k views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-4.mp4"></video><div class="video-caption">@canal_tech · +3.2M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-5.mp4"></video><div class="video-caption">@ia_master · +950k views</div></div>
+          </div>
+          <div class="video-marquee-content">
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-1.mp4"></video><div class="video-caption">@aluno_01 · +2.1M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-2.mp4"></video><div class="video-caption">@criador_ia · +1.5M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-3.mp4"></video><div class="video-caption">@motion_pro · +800k views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-4.mp4"></video><div class="video-caption">@canal_tech · +3.2M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/top-5.mp4"></video><div class="video-caption">@ia_master · +950k views</div></div>
+          </div>
+        </div>
+
+        <!-- Bottom Carousel (Left to Right) -->
+        <div class="video-marquee reverse">
+          <div class="video-marquee-content reverse-animation">
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-1.mp4"></video><div class="video-caption">@cortes_ia · +4.5M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-2.mp4"></video><div class="video-caption">@dark_channel · +1.1M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-3.mp4"></video><div class="video-caption">@lucro_online · +500k views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-4.mp4"></video><div class="video-caption">@video_maker · +750k views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-5.mp4"></video><div class="video-caption">@ia_vision · +2.8M views</div></div>
+          </div>
+          <div class="video-marquee-content reverse-animation">
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-1.mp4"></video><div class="video-caption">@cortes_ia · +4.5M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-2.mp4"></video><div class="video-caption">@dark_channel · +1.1M views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-3.mp4"></video><div class="video-caption">@lucro_online · +500k views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-4.mp4"></video><div class="video-caption">@video_maker · +750k views</div></div>
+            <div class="video-item"><video autoplay muted loop playsinline src="./landingpagevideos/bottom-5.mp4"></video><div class="video-caption">@ia_vision · +2.8M views</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Accordion Section -->
+    <section class="services" id="services">
+      <div class="services-container">
+        <div class="services-left">
+          <h2 class="section-title">O que você vai aprender</h2>
+          <p class="section-desc">Você vai sair daqui sabendo criar vídeos dignos de cinema. Do zero à sua primeira produção, prontos para atrair clientes de verdade.</p>
+          <div class="course-stats" style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; font-weight: 500; font-size: 0.95rem; color: var(--text-primary);">
+            <span>📘 Guia completo passo a passo</span>
+            <span style="color: var(--accent-color);">·</span>
+            <span>⚙️ Acesso a ferramenta de criação de roteiros em frequente atualização</span>
+            <span style="color: var(--accent-color);">·</span>
+            <span>♾️ Acesso vitalício</span>
+          </div>
+        </div>
+        <div class="services-right">
+          <div class="accordion">
+
+            <div class="accordion-item active">
+              <button class="accordion-header">
+                <span>PLANEJAMENTO DO ANÚNCIO</span>
+                <i data-lucide="plus" class="icon-plus"></i>
+              </button>
+              <div class="accordion-content">
+                <p>Aprenda a criar roteiros que vendem, definir o ângulo do anúncio, escolher referências visuais e montar prompts estratégicos antes de gerar qualquer imagem ou vídeo.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>GERAÇÃO DE VÍDEO COM IA</span>
+                <i data-lucide="plus" class="icon-plus"></i>
+              </button>
+              <div class="accordion-content">
+                <p>Domine as principais ferramentas de IA para gerar cenas, atores virtuais, vozes e movimentos de câmera dignos de cinema — sem precisar de equipe, estúdio ou equipamento caro.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>EDIÇÃO, VFX & ENTREGA FINAL</span>
+                <i data-lucide="plus" class="icon-plus"></i>
+              </button>
+              <div class="accordion-content">
+                <p>Finalize seus vídeos com cortes dinâmicos, efeitos visuais, trilha sonora e ritmo de edição que prendem a atenção e convertem em vendas.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="section-header">
+        <h2 class="section-title" style="font-size: clamp(2rem, 5vw, 4rem);">O que dizem sobre nós</h2>
+      </div>
+      <div class="video-carousels">
+        <div class="video-marquee">
+          <div class="video-marquee-content">
+            <div class="video-item"><img src="./provas sociais/print-1.png" alt="Depoimento 1" /></div>
+            <div class="video-item"><img src="./provas sociais/print-2.png" alt="Depoimento 2" /></div>
+            <div class="video-item"><img src="./provas sociais/print-3.png" alt="Depoimento 3" /></div>
+            <div class="video-item"><img src="./provas sociais/print-4.jpg" alt="Depoimento 4" /></div>
+            <div class="video-item"><img src="./provas sociais/print-5.jpg" alt="Depoimento 5" /></div>
+            <div class="video-item"><img src="./provas sociais/print-6.heic" alt="Depoimento 6" /></div>
+            <div class="video-item"><img src="./provas sociais/print-7.jpg" alt="Depoimento 7" /></div>
+          </div>
+          <div class="video-marquee-content">
+            <div class="video-item"><img src="./provas sociais/print-1.png" alt="Depoimento 1" /></div>
+            <div class="video-item"><img src="./provas sociais/print-2.png" alt="Depoimento 2" /></div>
+            <div class="video-item"><img src="./provas sociais/print-3.png" alt="Depoimento 3" /></div>
+            <div class="video-item"><img src="./provas sociais/print-4.jpg" alt="Depoimento 4" /></div>
+            <div class="video-item"><img src="./provas sociais/print-5.jpg" alt="Depoimento 5" /></div>
+            <div class="video-item"><img src="./provas sociais/print-6.heic" alt="Depoimento 6" /></div>
+            <div class="video-item"><img src="./provas sociais/print-7.jpg" alt="Depoimento 7" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="services" id="faq" style="padding-top: 50px;">
+      <div class="services-container" style="display: block; max-width: 800px; margin: 0 auto;">
+        <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+          <h2 class="section-title">Perguntas Frequentes</h2>
+        </div>
+        
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span style="font-size: 1.1rem; text-transform: none;">Preciso saber editar vídeo para fazer o curso?</span>
+              <i data-lucide="plus" class="icon-plus"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Não. O método foi desenhado exatamente para quem não sabe nada de edição. A Inteligência Artificial fará o trabalho pesado para você.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span style="font-size: 1.1rem; text-transform: none;">Funciona pelo celular ou preciso de computador?</span>
+              <i data-lucide="plus" class="icon-plus"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Sim! Você pode aplicar 100% do método pelo seu celular, usando os aplicativos recomendados durante as aulas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span style="font-size: 1.1rem; text-transform: none;">Por quanto tempo tenho acesso ao curso?</span>
+              <i data-lucide="plus" class="icon-plus"></i>
+            </button>
+            <div class="accordion-content">
+              <p>O seu acesso é vitalício. Você pode assistir e rever as aulas quando e de onde quiser, para sempre.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span style="font-size: 1.1rem; text-transform: none;">Existe garantia caso eu não goste?</span>
+              <i data-lucide="plus" class="icon-plus"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Com certeza. Se você não gostar do método ou achar que não é para você, basta pedir o reembolso nos primeiros 7 dias e devolveremos 100% do seu dinheiro.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span style="font-size: 1.1rem; text-transform: none;">Vou aprender a usar quais ferramentas de IA?</span>
+              <i data-lucide="plus" class="icon-plus"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Você aprenderá a dominar ferramentas como ChatGPT para roteiros, Midjourney/Leonardo para imagens, ElevenLabs para locução e Runway/Pika para animação, além dos melhores editores.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="footer" id="contact">
+      <div class="footer-top">
+        <h2 class="footer-cta"><span style="visibility: hidden; pointer-events: none;">PREPARADO PARA COMEÇAR?</span></h2>
+        
+        <div class="pricing-section">
+          <div class="pricing-card-wrapper">
+            <div class="pricing-card">
+              <h3 class="pricing-title">OFERTA ESPECIAL</h3>
+              <p class="pricing-original">De R$97,00</p>
+              <div class="pricing-price">
+                <span class="currency">Por R$</span>
+                <span class="value">15,90</span>
+              </div>
+              <div class="countdown-timer-wrapper" style="margin-bottom: 25px;">
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px; font-weight: 500;">⏰ Oferta termina em:</p>
+                <div class="countdown-timer" id="offerTimer">
+                  <div class="time-box"><span id="timerHours">23</span><small>h</small></div>
+                  <div class="time-separator">:</div>
+                  <div class="time-box"><span id="timerMinutes">59</span><small>m</small></div>
+                  <div class="time-separator">:</div>
+                  <div class="time-box"><span id="timerSeconds">59</span><small>s</small></div>
+                </div>
+              </div>
+              <ul class="pricing-bullets">
+                <li><span style="color: var(--accent-color); font-weight: bold;">✓</span> Treinamento completo do zero</li>
+                <li><span style="color: var(--accent-color); font-weight: bold;">✓</span> Ferramenta para criação de roteiros</li>
+                <li><span style="color: var(--accent-color); font-weight: bold;">✓</span> Acesso vitalício</li>
+              </ul>
+              <a href="https://pay.wiapy.com/dhzsOi5ir_N-" target="_blank" class="btn btn-animated">COMEÇAR AGORA</a>
+              <p class="pricing-social-proof">⭐⭐⭐⭐⭐ +500 alunos formados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Motion LAB. All Rights Reserved.</p>
+      </div>
+    <!-- Sales Popup Notification -->
+    <div class="sales-popup" id="salesPopup">
+      <div class="sales-popup-img">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      </div>
+      <div class="sales-popup-content">
+        <p class="sales-name"><span id="buyerName">Ana Luiza</span> acabou de comprar</p>
+        <p class="sales-time">Neste exato momento</p>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
