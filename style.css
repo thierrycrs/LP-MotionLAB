@@ -224,9 +224,10 @@ a {
 }
 
 .hero-title {
-  font-size: clamp(2rem, 8vw, 7rem); /* Reduced min size from 3rem to 2rem for mobile */
+  font-size: clamp(2rem, 5vw, 4.5rem); 
   margin-bottom: 24px;
-  line-height: 1.1;
+  line-height: 0.95;
+  letter-spacing: -1px;
 }
 
 .hero-subtitle {
