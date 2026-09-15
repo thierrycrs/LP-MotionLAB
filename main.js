@@ -231,10 +231,6 @@ if (workSection && marqueeVideos.length > 0) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         marqueeVideos.forEach(video => {
-          // Lazy load source
-          if (!video.src && video.dataset.src) {
-            video.src = video.dataset.src;
-          }
           const playPromise = video.play();
           if (playPromise !== undefined) {
             playPromise.catch(e => console.log('Autoplay prevented:', e));
@@ -248,7 +244,7 @@ if (workSection && marqueeVideos.length > 0) {
         });
       }
     });
-  }, { rootMargin: "600px 0px" }); // Load videos slightly before scrolling to them
+  }, { rootMargin: "600px 0px" });
 
   videoObserver.observe(workSection);
 }
