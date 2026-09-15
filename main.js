@@ -221,3 +221,34 @@ if (hoursEl && minutesEl && secondsEl) {
   setInterval(updateTimer, 1000);
   updateTimer();
 }
+
+// Lazy Load & Pause marquee videos when not in viewport to save CPU/GPU
+const workSection = document.getElementById('work');
+const marqueeVideos = document.querySelectorAll('.video-marquee video');
+
+if (workSection && marqueeVideos.length > 0) {
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        marqueeVideos.forEach(video => {
+          // Lazy load source
+          if (!video.src && video.dataset.src) {
+            video.src = video.dataset.src;
+          }
+          const playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(e => console.log('Autoplay prevented:', e));
+          }
+        });
+      } else {
+        marqueeVideos.forEach(video => {
+          if (!video.paused) {
+            video.pause();
+          }
+        });
+      }
+    });
+  }, { rootMargin: "600px 0px" }); // Load videos slightly before scrolling to them
+
+  videoObserver.observe(workSection);
+}
