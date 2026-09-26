@@ -228,16 +228,34 @@
     <section class="testimonials" id="testimonials" style="padding-top: 60px; padding-bottom: 60px;">
       <div class="section-header" style="text-align: center; margin-bottom: 40px;">
         <h2 class="section-title" style="font-size: clamp(2rem, 5vw, 4rem);">O que dizem sobre nós</h2>
-        <p class="section-desc" style="margin-top: 8px; color: #888;">3 destaques em cima, 3 apoios embaixo</p>
       </div>
       
-      <div class="testimonials-grid-simple">
+      <!-- Desktop: 3x2 grid | Mobile: auto-scroll carousel -->
+      <div class="testimonials-grid-simple" id="testimonialsGrid">
+        <!-- Desktop images (hidden on mobile via CSS) -->
         <img src="./provas sociais/IMG_4390.PNG" alt="Depoimento 1">
         <img src="./provas sociais/IMG_4391.PNG" alt="Depoimento 2">
         <img src="./provas sociais/IMG_4392.PNG" alt="Depoimento 3">
         <img src="./provas sociais/IMG_4393.PNG" alt="Depoimento 4">
         <img src="./provas sociais/IMG_4394.PNG" alt="Depoimento 5">
         <img src="./provas sociais/IMG_4395.PNG" alt="Depoimento 6">
+
+        <!-- Mobile carousel track (visible only on mobile via CSS) -->
+        <div class="testimonials-marquee-track" id="testimonialsTrack">
+          <img src="./provas sociais/IMG_4390.PNG" alt="Depoimento 1">
+          <img src="./provas sociais/IMG_4391.PNG" alt="Depoimento 2">
+          <img src="./provas sociais/IMG_4392.PNG" alt="Depoimento 3">
+          <img src="./provas sociais/IMG_4393.PNG" alt="Depoimento 4">
+          <img src="./provas sociais/IMG_4394.PNG" alt="Depoimento 5">
+          <img src="./provas sociais/IMG_4395.PNG" alt="Depoimento 6">
+          <!-- Duplicated for infinite loop -->
+          <img src="./provas sociais/IMG_4390.PNG" alt="Depoimento 1">
+          <img src="./provas sociais/IMG_4391.PNG" alt="Depoimento 2">
+          <img src="./provas sociais/IMG_4392.PNG" alt="Depoimento 3">
+          <img src="./provas sociais/IMG_4393.PNG" alt="Depoimento 4">
+          <img src="./provas sociais/IMG_4394.PNG" alt="Depoimento 5">
+          <img src="./provas sociais/IMG_4395.PNG" alt="Depoimento 6">
+        </div>
       </div>
     </section>
 

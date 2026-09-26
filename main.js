@@ -248,3 +248,25 @@ if (workSection && marqueeVideos.length > 0) {
 
   videoObserver.observe(workSection);
 }
+
+// Testimonials mobile carousel: pause on touch/hover, resume on release
+const testimonialsTrack = document.getElementById('testimonialsTrack');
+if (testimonialsTrack) {
+  // Pause on touch start and mouse enter
+  testimonialsTrack.addEventListener('touchstart', () => {
+    testimonialsTrack.classList.add('paused');
+  }, { passive: true });
+
+  testimonialsTrack.addEventListener('mouseenter', () => {
+    testimonialsTrack.classList.add('paused');
+  });
+
+  // Resume on touch end and mouse leave
+  testimonialsTrack.addEventListener('touchend', () => {
+    setTimeout(() => testimonialsTrack.classList.remove('paused'), 800);
+  }, { passive: true });
+
+  testimonialsTrack.addEventListener('mouseleave', () => {
+    testimonialsTrack.classList.remove('paused');
+  });
+}
